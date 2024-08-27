@@ -20,9 +20,10 @@ export const getAllSubjectsByTypes = (subject) => {
 
 export const getQuestionsForUser = (numOfQuestions, subject) => {
   return axios.get(
-    `${REST_API_BASE_URL}/api/quizzes/quiz/getQuestionsForUser?numOfQuestions=${numOfQuestions}&subject=${subject}`
+    `${URL}/api/quizzes/quiz/getQuestionsForUser?numOfQuestions=${numOfQuestions}&subject=${subject}`
   );
 };
+
 
 export const getAllSubjects = () => {
   return axios.get(`${REST_API_BASE_URL}/api/quizzes/subjects`);

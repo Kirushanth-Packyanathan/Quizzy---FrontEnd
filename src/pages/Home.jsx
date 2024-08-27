@@ -42,8 +42,17 @@
 // export default ProfessionalLandingPage;
 
 import React from "react";
-import { Box, Paper, Typography, Container, Button, Grid, TextField } from "@mui/material";
+import {
+  Box,
+  Paper,
+  Typography,
+  Container,
+  Button,
+  Grid,
+  TextField,
+} from "@mui/material";
 import NavigationBar from "../components/NavigationBar";
+import { Link } from 'react-router-dom';
 
 function ProfessionalLandingPage() {
   return (
@@ -68,15 +77,25 @@ function ProfessionalLandingPage() {
           Welcome to <br />
           Online Quizz Portal
         </Typography>
-        <Typography variant="h4" sx={{ marginBottom: "1rem", textAlign: "center" }}>
+        <Typography
+          variant="h4"
+          sx={{ marginBottom: "1rem", textAlign: "center" }}
+        >
           Find the Perfect Quiz for You
         </Typography>
-        <Button
-          variant="contained"
-          sx={{ backgroundColor: "#4535C1", padding: "0.5rem 2rem", fontSize: "1.2rem" }}
-        >
-          Take a Quiz Now!
-        </Button>
+
+        <Link to="/takeQuizz" style={{ textDecoration: "none" }}>
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "#4535C1",
+              padding: "0.5rem 2rem",
+              fontSize: "1.2rem",
+            }}
+          >
+            Take a Quiz Now!
+          </Button>
+        </Link>
       </Box>
 
       {/* <Container sx={{ padding: "4rem 0" }}>
