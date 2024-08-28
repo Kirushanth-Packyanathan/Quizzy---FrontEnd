@@ -6,6 +6,7 @@ import AddQuestion from "./components/AddQuestion"
 import Home from './pages/Home';
 import FetchQuestions from './components/FetchQuestions';
 import StartQuizz from './components/StartQuizz';
+import LogInPage from './components/LogInPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/view-questions" element={<GetAllQuestions />} />
       <Route path="/quiz/:subject/:numQuestions" element={<FetchQuestions />} />
       <Route path="/takeQuizz" element={<StartQuizz />} />
+      <Route path="/login" element={<LogInPage />} />
     </Routes>
   );
 }
