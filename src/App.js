@@ -4,6 +4,9 @@ import GetAllQuestions from './components/GetAllQuestions'; // Adjust the import
 import UpdateAccount from './components/UpdateQuestion'; // Ensure this component exists
 import AddQuestion from "./components/AddQuestion"
 import Home from './pages/Home';
+import FetchQuestions from './components/FetchQuestions';
+import StartQuizz from './components/StartQuizz';
+import LogInPage from './pages/LogInPage';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Route path="/update-account" element={<UpdateAccount />} />
       <Route path="/add-question" element={<AddQuestion />} />
       <Route path="/view-questions" element={<GetAllQuestions />} />
+      <Route path="/quiz/:subject/:numQuestions" element={<FetchQuestions />} />
+      <Route path="/takeQuizz" element={<StartQuizz />} />
+      <Route path="/login" element={<LogInPage />} />
     </Routes>
   );
 }
