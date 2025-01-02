@@ -6,7 +6,7 @@ import AddQuestion from "./components/AddQuestion"
 import Home from './pages/Home';
 import FetchQuestions from './components/FetchQuestions';
 import StartQuizz from './components/StartQuizz';
-import LogInPage from './components/LogInPage';
+import LogInPage from './pages/LogInPage';
 
 function App() {
   return (

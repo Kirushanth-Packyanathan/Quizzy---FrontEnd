@@ -40,3 +40,7 @@ export const deleteQuestion = (id) => {
 export const getQuestionById = (id) => {
     return axios.get(`${REST_API_BASE_URL}/api/quizzes/getQuestionById/${id}`);
 };
+
+export const saveStudentData = (userData) => {
+  return axios.post(`${REST_API_BASE_URL}/api/students`, userData);
+};

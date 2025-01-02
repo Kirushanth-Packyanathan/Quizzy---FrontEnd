@@ -2,22 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Box, Typography, Button } from "@mui/material";
 import NavigationBar from "../components/NavigationBar";
 import { Link } from 'react-router-dom';
-import axios from "axios";
+
 
 function ProfessionalLandingPage() {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    axios.get("http://localhost:8080/api/user/user-info", { withCredentials: true })
-      .then(response => {
-        setUser(response.data);
-        localStorage.setItem("user",user);
-        console.log(user);
-      })
-      .catch(error => {
-        console.error("Error occurred", error);
-      });
-  }, []);
 
   return (
     <>
